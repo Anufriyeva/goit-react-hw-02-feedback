@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {SectionContainer} from './Section.styles';
+import PropTypes from 'prop-types';
 
 
 class Section extends Component {
@@ -14,5 +15,9 @@ class Section extends Component {
     );
   }
 }
+
+Section.propTypes = {
+  title: PropTypes.string,
+};
 
 export default Section;

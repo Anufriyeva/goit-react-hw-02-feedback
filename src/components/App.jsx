@@ -23,7 +23,6 @@ class App extends Component {
   };
 
   countPositiveFeedbackPercentage = () => {
-    // const { good } = this.state;
     const totalFeedback = this.countTotalFeedback();
     return totalFeedback ? Number(((this.state.good / totalFeedback) * 100).toFixed(2)) : 0;
   };
@@ -31,7 +30,6 @@ class App extends Component {
   render() {
     const totalFeedback = this.countTotalFeedback();
     const positiveFeedbackPercentage = this.countPositiveFeedbackPercentage();
-    // const feedbackOptions = ['Good', 'Neutral', 'Bad'];
 
     return (
       <div>
